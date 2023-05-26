@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header{
+    background-color: rgb(14, 196, 196);
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+
+    .header_container{
+
+      display: flex;
+      gap: 50px;
+      height: 100%;
+
+    }
+
+    .header_nav{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-self: flex-start;
+        margin-left: 20px;
+      }
+
+
+  }
+  

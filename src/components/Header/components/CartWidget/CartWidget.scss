@@ -1,0 +1,25 @@
+.carrito{
+
+    display: flex;
+    justify-self: flex-end;
+    
+
+    .botonCarrito{
+
+        display: flex;
+        align-self: flex-end;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+    
+        .imagenCarrito{
+    
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    
+    }
+}
+
