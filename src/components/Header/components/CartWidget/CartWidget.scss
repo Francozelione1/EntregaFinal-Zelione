@@ -2,6 +2,7 @@
 
     display: flex;
     justify-self: flex-end;
+    gap: 15px;
     
 
     .botonCarrito{
@@ -20,6 +21,26 @@
             border-radius: 10px;
         }
     
+    }
+
+    .itemsCarrito{
+
+        background-color: black;
+        display: flex;
+        width: 20px;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        border-radius: 5px;
+
+        .numeroCarrito{
+            color: white;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
     }
 }
 
