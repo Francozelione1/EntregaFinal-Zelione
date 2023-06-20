@@ -6,7 +6,7 @@ const Header = () =>{
         <header>
             <div className="header_container">
                 <section className="header_nav">
-                    <Navbar seccion1="Inicio" seccion2="¿Quienes somos?" seccion3="Juegos" seccion4="Contacto" />
+                    <Navbar/>
                 </section>
             </div>
         </header>

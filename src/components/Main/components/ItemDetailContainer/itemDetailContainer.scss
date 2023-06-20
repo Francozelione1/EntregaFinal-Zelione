@@ -1,0 +1,56 @@
+.contenedorJuego{
+
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    
+    background-color: bisque;
+    
+
+    .cartaJuegoSingular{
+        display: flex;
+        flex-direction: column;
+        max-height: 500px;
+        max-width: 20%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+        gap: 20px;
+        align-items: center;
+        font-weight: bold;
+        padding: 20px 30px;
+    
+        .imgJuego{
+            border-radius: 5px;
+            object-fit: cover;
+            max-width: 50%;
+        }
+    
+        .añadirCarrito{
+    
+            display: flex;
+            justify-content: center;
+            align-self: flex-end;
+            width: 30%;
+            max-width: 20%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+    
+            .imgAñadirCarrito{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+        
+    }
+}

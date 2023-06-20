@@ -1,5 +1,4 @@
 {
-  "homepage": "https://francozelione1.github.io/PreEntrega1-Zelione",
   "name": "aplicacion",
   "private": true,
   "version": "0.0.0",
@@ -15,6 +14,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.13.0",
     "sass": "^1.62.1"
   },
   "devDependencies": {

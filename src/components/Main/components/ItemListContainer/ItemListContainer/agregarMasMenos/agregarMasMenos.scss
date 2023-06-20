@@ -1,0 +1,32 @@
+.botonCantidad{
+    background-color: black;
+    display: flex;
+    width: 80%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+    .sumaCantidad{
+        display: flex;
+        width: 20%;
+        height: auto;
+        cursor: pointer;
+        border-radius: 5px;
+
+        .imgCantidad{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+
+    .contador{
+
+        color: white;
+        font-weight: 10px;
+        text-align: center;
+    }
+
+    
+}

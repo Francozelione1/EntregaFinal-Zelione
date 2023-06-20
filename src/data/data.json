@@ -1,0 +1,7 @@
+[ {"nombre": "God Of War", "id": 1 , "img":"/img/juego1.webp" , "precio" : 7000, "categoria":"psn"},
+  {"nombre": "Uncharted", "id": 2 , "img":"/img/Juego2.jpg" , "precio" : 8000, "categoria":"psn"},
+  {"nombre": "Control", "id": 3 , "img":"/img/Juego3.jpg" , "precio" : 9000, "categoria":"psn"},
+  {"nombre": "Just Cause", "id": 4 , "img":"/img/justsCause4.jpg" , "precio" : 10000, "categoria":"xbox"},
+  {"nombre": "Modern Warfare", "id": 5 , "img":"/img/modernWarfare.jpg" , "precio" : 11000, "categoria":"xbox"},
+  {"nombre": "Advance Warfare", "id": 6 , "img":"/img/advanceWarfare.jpg" , "precio" : 12000, "categoria":"xbox"}
+]

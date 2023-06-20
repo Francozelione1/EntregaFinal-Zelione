@@ -1,16 +1,34 @@
-const ItemListContainer= ({juego1,juego2,juego3})=>{
+import { useEffect, useState } from "react"
+import ItemList from "../ItemListContainer/itemList/itemList"
+import {pedirDatos} from "../../../../../helpers/pedirDatos"
+import { useParams } from "react-router-dom"
 
+const ItemListContainer= ()=>{
+
+    const [productos, setProductos] = useState ([])
+    const {categoriaId} = useParams()
+    let modo=categoriaId
+
+    useEffect(() =>{
+        pedirDatos()    
+        .then((res)=>{
+            if(!categoriaId){
+                setProductos(res)
+                modo="modoInicio"
+                console.log(modo)
+            }
+            else{
+                setProductos(res.filter((producto)=>producto.categoria === categoriaId)) 
+                console.log(modo)
+            }
+        } )
+        .catch((rej) =>{
+            console.log(rej)
+        })
+    },[categoriaId])
 
     return(
-        <section className="cajaJuegos">
-            <ul className="listaJuegos">
-                <li className="juego"> {juego1} </li>
-                <li className="juego"> {juego2} </li>
-                <li className="juego"> {juego3} </li>
-                
-            </ul>
-        </section>
-
+           <ItemList producto={productos} modo={modo} /> 
     )
 }
 
