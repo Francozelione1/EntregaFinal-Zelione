@@ -1,15 +1,20 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Link } from 'react-router-dom'
+import { CartContext } from "../../../../context/cartContext"
 
 const CartWidget = () =>{
 
+    let {productosTotales, carrito} = useContext(CartContext)
 
     return(
         <section className="carrito">
-            <button className="botonCarrito">
-                <img src="/img/carrito.png" alt="" className="imagenCarrito"/>
-            </button>
+            <Link className="" to="/carrito">
+                <button className="botonCarrito">
+                    <img src="/img/carrito.png" alt="" className="imagenCarrito"/>
+                </button>
+            </Link>
             <div className="itemsCarrito">
-                <p className="numeroCarrito">0</p>
+                <p className="numeroCarrito">{carrito.length}</p>
             </div>
         </section>
 

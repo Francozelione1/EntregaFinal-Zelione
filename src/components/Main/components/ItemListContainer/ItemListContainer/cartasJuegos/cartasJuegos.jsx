@@ -27,6 +27,3 @@ const CartaJuego = ({product})=>{
 
 export default CartaJuego
 
-/* <button className="verDetalle">
-                Ver detalle
-            </button> */

@@ -1,17 +1,16 @@
 import { useState } from "react"
 
-const AgregarMasMenos = ()=>{
+const AgregarMasMenos = ({cantidad, setCantidad, item})=>{
     
-    const [counter, setCounter] = useState(0)
 
     const sumar = ()=>{
-        setCounter(counter + 1) 
+        setCantidad(cantidad + 1) 
     }
 
     const restar = ()=>{
-
-        counter <= 0 ? setCounter(counter) : setCounter(counter - 1)
+        cantidad <= 1 ? setCantidad(cantidad) : setCantidad(cantidad - 1)
     }
+    
 
     return(
 
@@ -22,7 +21,7 @@ const AgregarMasMenos = ()=>{
             </button>
 
             <p className="contador">
-                {counter}
+                {cantidad}
             </p>
 
             <button className="sumaCantidad">
