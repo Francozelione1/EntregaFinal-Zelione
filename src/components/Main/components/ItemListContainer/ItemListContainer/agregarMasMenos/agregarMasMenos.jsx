@@ -1,10 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { CartContext } from "../../../../../../context/cartContext"
 
-const AgregarMasMenos = ({cantidad, setCantidad, item})=>{
+const AgregarMasMenos = ({cantidad, setCantidad, stock})=>{
     
-
     const sumar = ()=>{
-        setCantidad(cantidad + 1) 
+        stock > cantidad ? setCantidad(cantidad+1): setCantidad(cantidad)
     }
 
     const restar = ()=>{

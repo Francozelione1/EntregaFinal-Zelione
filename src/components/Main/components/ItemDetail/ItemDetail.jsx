@@ -8,28 +8,33 @@ const ItemDetail = ({id, nombre, categoria, img, precio, stock})=>{
 
     const {agregarAlCarrito, setCantidad, carrito} = useContext(CartContext)
 
-    let {cantidad, cantidadEnviada, setCantidadEnviada, estadoNexo, setEstadoNexo} = useContext(CartContext)
+    let {cantidad} = useContext(CartContext)
 
-    
     const handleAgregarCarrito= ()=>{
-
+        
         const item= {
             id,
             nombre,
             precio,
             categoria,
             cantidad,
-            stock,
+            stock: stock,
             img
         }
-        
-        
+                   
         agregarAlCarrito(item)
+        setCantidad(1)
+
         
+
     }
     
-    return (
+    
+    //let itemStock = stock
+    
 
+    return (
+        
         <div className="cartaJuegoSingular">
             <p>
                 {nombre}
@@ -41,7 +46,13 @@ const ItemDetail = ({id, nombre, categoria, img, precio, stock})=>{
                 Precio: {precio}
             </p>
             
-            <AgregarMasMenos cantidad={cantidad} setCantidad={setCantidad} />
+            <AgregarMasMenos cantidad={cantidad} setCantidad={setCantidad} stock={stock} />
+
+            {
+
+                stock-cantidad <=0 ? <div>No hay mas stock</div>: <div></div>
+
+            }
 
             <button onClick={handleAgregarCarrito} className="añadirCarrito">
                 <img  src="/img/carrito.png" alt="" className="imgAñadirCarrito" />

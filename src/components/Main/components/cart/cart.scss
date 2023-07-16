@@ -1,0 +1,132 @@
+.contenedorCarrito{
+    position: relative;
+    margin-top: 0;
+    background-color: bisque;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .tituloCarrito{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    .separacionCarrito{
+        width: 80%;
+        color: black;
+        font-weight: bolder;
+        background-color: black;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .contenedorJueguitos{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3,1fr);
+        max-width: 60%;
+
+        .cartaJuegoCarrito{
+    
+            display: flex;
+            flex-direction: column;
+            max-width: 70%;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            justify-content: center;
+            height: auto;
+            text-align: center;
+            gap: 20px;
+            align-items: center;
+            font-weight: bold;
+            padding: 20px 30px;
+            
+                .imgJuego{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            
+                .añadirCarrito{
+            
+                    display: flex;
+                    justify-content: center;
+                    align-self: flex-end;
+                    width: 30%;
+                    height: auto;
+                    border-radius: 10px;
+                    cursor: pointer;
+            
+                    .imgAñadirCarrito{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+                
+            
+        }
+        
+
+    }
+    .infoPago{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        color: black;
+        font-size: 20px;
+        font-weight: bolder;
+
+        .vaciarCarrito{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: red;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .finalizarCompra{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(3, 88, 60);
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid black;
+
+        }
+
+        
+
+    }
+    
+}
+
+
+.eliminarProducto{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
