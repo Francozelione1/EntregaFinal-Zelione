@@ -17,7 +17,7 @@ const AgregarMasMenos = ({cantidad, setCantidad, stock})=>{
         <div className="botonCantidad">
 
             <button className="sumaCantidad">
-                <img src="/img/signo +.jpg" alt="+" className="imgCantidad" onClick={sumar}/>
+                <p className="sumar" onClick={restar}>-</p>
             </button>
 
             <p className="contador">
@@ -25,7 +25,8 @@ const AgregarMasMenos = ({cantidad, setCantidad, stock})=>{
             </p>
 
             <button className="sumaCantidad">
-                <img src="/img/signo-.webp" alt="-" className="imgCantidad" onClick={restar} />
+                <p className="sumar" onClick={sumar}>+</p>
+               
             </button>
 
         </div>

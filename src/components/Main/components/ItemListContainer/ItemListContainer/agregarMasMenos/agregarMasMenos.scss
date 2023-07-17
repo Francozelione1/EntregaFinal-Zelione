@@ -8,6 +8,8 @@
 
     .sumaCantidad{
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 20%;
         height: auto;
         cursor: pointer;
@@ -29,4 +31,10 @@
     }
 
     
+}
+
+.sumar{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
 }

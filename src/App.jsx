@@ -10,6 +10,8 @@ import { Cart } from './components/Main/components/cart/cart'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Checkout } from './components/checkout/checkout'
+import { Footer } from './components/Footer/footer'
+import { Navigate } from 'react-router-dom'
 
 function App() {
   
@@ -26,9 +28,11 @@ function App() {
         <Route path="/:id" element={<ItemDetailContainer/>} />
         <Route path='/carrito' element={<Cart/>} ></Route>
         <Route path='/checkout' element={<Checkout/>} ></Route>
+        <Route path="*" element={<Navigate to="/"/>}/>
         
       </Routes>
       <ToastContainer />
+      <Footer/>
     </BrowserRouter>
     </CartProvider>
    

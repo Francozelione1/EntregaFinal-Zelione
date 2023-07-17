@@ -50,7 +50,7 @@ const ItemDetail = ({id, nombre, categoria, img, precio, stock})=>{
 
             {
 
-                stock-cantidad <=0 ? <div>No hay mas stock</div>: <div></div>
+                stock-cantidad <=0 ? <div>Cantidad maxima</div>: <div></div>
 
             }
 

@@ -1,0 +1,28 @@
+.footer{
+    position: relative;
+    display: flex;
+    background-color: rgb(14, 196, 196);
+    background-size: cover;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+    .fotoRedes{
+        max-width: 50px;
+        border-radius: 10px;
+        transition: 0.5s all;
+        opacity: 0.5;
+        cursor: s;
+    }
+
+    .fotoRedes:hover{
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 3px white;
+        opacity: 1;
+
+    }
+
+}
+
